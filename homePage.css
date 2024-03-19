@@ -1,0 +1,401 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* header{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+} */
+.navbar{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    background-color:#1e2020;
+    padding:10px 5px;
+    width: 100%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.logo a{
+    margin: 0 10px;
+    font-size: 24px;
+    color: aliceblue;
+    text-decoration:none; */
+    transition:all .2s ease-out;
+}
+.logo a:hover{
+    transform: matrix(-3px);
+    color: aqua;
+}
+.search{
+    align-items: center;
+    justify-content: center; 
+    display: flex;
+    gap: 0.3rem;
+    background-color: white; 
+    width: 360px;
+    height: 28px;
+    border-radius: 5px;
+    transition: all .0s ease-out;
+} 
+.search:hover{
+    border:0.5px solid ;
+    border-color: rgb(229, 249, 4))
+}
+.search input{
+    width: 100%;
+    height: 100%;
+    border: none;
+    font-size: 1rem;
+}
+.search input:focus{
+    outline: none;
+}   
+.search label{
+    font-size: 17px;
+    cursor: pointer;
+    padding: 0 0.5rem;
+    transition: all .0s ease-out;
+}
+.search label:hover{
+    transform: matrix3d(-3px);
+    color:rgb(103, 0, 0);
+}
+.mic button{
+    font-size: 17px;
+    height: 30px;
+    width: 30px;
+    border: 1.5px solid white;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all .2s ease-out;
+}
+.mic button:hover{
+    transform: matrix3d(-3px);
+    background-color:aqua;
+    color: rgb(54, 9, 9);
+}
+.menu{
+    list-style: none;
+    display: flex;
+}
+.menu li a{
+    margin: 0 12px;
+    font-size: 20px;
+    text-decoration: none;
+    color: #fff;
+    transition: all .0s ease-out;
+}
+.menu li a:hover{
+    transform: matrix(-3px);
+    color: rgb(2, 232, 232);
+}
+.bars{
+    float: right;
+    position: relative;
+    list-style: none;
+    display: flex;
+}
+.bars a{
+    font-size: 20px;
+    text-decoration: none;
+    color: #fff;
+    transition: all .0s ease-out;
+}
+.bars a:hover{
+    transform: matrix(-3px);
+    color: rgb(2, 232, 232);
+}
+#menu-bars{
+    border-radius: 5px;
+    position: absolute;
+    top: 110px;
+    /* right:-110%; */
+    opacity: 0;
+    padding: 1rem;
+    line-height: 1.5rem;
+    background-color: #ffffff;
+    box-shadow:1px 2px 10px 5px rgb(100, 100, 100);
+    transition: .4s linear;
+}
+#menu-bars.active{
+    opacity: 1;
+}
+/* .navbar .menu-bars li{
+    list-style-type: none;
+}
+#menu-bars li a{
+    color: #3c0202;
+    text-decoration: none;
+}
+#menu-bars a:hover{
+} */
+.scrool{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size:16px;
+}
+.scrool h2{
+    color: #f10606;
+}
+.leftbox{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    background-color:#183D3D;
+    height: 30px;
+    width: 100%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.leftbox a{
+    text-decoration: none;
+    color: #fff;
+    transition: all .40s ease;
+}
+.leftbox a:hover{
+    transform: translateZ(-3px);
+    color:rgb(217, 243, 203);
+    text-decoration:underline;
+}
+/* banner code*/
+.banner{
+    height: 350px;
+    padding: 50px 13% 30px; 
+    background: url(banner.jpg);
+    background-size: cover;
+    display: flex;
+    box-shadow:0 0.5rem 1.5rem rgb(160, 160, 160) ;
+
+}
+.sub_banner{
+    text-align:center;
+    padding: 1rem 0;
+}
+span{
+    color:rgb(6, 6, 184) ;
+    text-shadow:2px 2px rgb(251, 251, 255) ;
+}
+.sub_banner h3{
+    color: #350808;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2em;
+    text-shadow: 1px 2px #fff;
+}
+.sub_banner .btn{
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: blue;
+}
+
+/* banner code*/
+
+/* all product code*/
+#product{
+    text-align: center;
+    padding: 10px 15px;
+}
+#product .box-container{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top:10px;
+    flex-wrap: wrap;
+}
+#product .box{
+    width: 20%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 0px solid #948989;
+    cursor: pointer;
+    box-shadow: 0 0.5rem 1.5rem rgba(0,0,0,.1) ;
+    margin: 15px 0;
+    transition: 0.2s ease;
+    position: relative;
+    background-color: #ffffff;
+}
+#product .box:hover{
+    box-shadow:1px 2px 10px 5px rgb(162, 162, 162);
+}
+#product .box img{
+    width: 80%;
+    height: 250px;
+}
+#product .box .desc{
+    display: block;
+    text-align: start;
+    padding: 10px 0;
+}
+#product .box .desc span{
+    color: #948989;
+    font-size: 12px;
+}
+#product .box .desc h3{
+    text-wrap: wrap;
+    font-size: 14px;
+    padding-top: 7px;
+    color: #1a1a1a;
+}
+#product .box .desc .star{
+    font-size: 12px;
+    color: rgb(243, 181, 25);
+}
+#product .box .desc h4{
+    font-size: 14px;
+    color: #088178;
+}
+#product .box .cart{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+    background-color: #d4d4d4;
+    font-weight: 500;
+    color: #1b1a01;
+    border: 1px solid #cce7d0;
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+}
+#product .box .cart:hover{
+    background-color:blue;
+    color: #e8f6ea;
+}
+/* for cloth banner*/
+.cloth-banner{
+    display: flex;
+    text-align:left;
+    justify-content: space-evenly;
+}
+.cloth-banner span{
+    color: rgb(216, 216, 4);
+    text-shadow: none;
+}
+.cloth-banner h3{
+    color: #e8f6ea;
+}
+.cloth-banner h1{
+    color: aliceblue;
+}
+.cloth-banner button{
+    padding: 2px 5px;
+    font-size: larger;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
+}
+.cloth-banner button:hover{
+    color: #ffffff;
+    background-color: blue;
+    border: none;
+}
+.cloth-b{
+    padding: 10px 20px 0px;
+    width: 560px;
+    height: 250px; 
+    background-image: url("clothbanner.jpg");
+    background-size: cover;
+    box-shadow: 0 0.5rem 1.5rem rgba(0,0,0,.1);
+}
+.cloth-b1{
+    padding: 10px 20px 0px;
+    width: 560px;
+    height: 250px; 
+    background-image: url("clothbanner5.avif");
+    background-size: cover;
+    box-shadow: 0 0.5rem 1.5rem rgba(0,0,0,.1);
+}
+
+/* for cloth banner*/
+
+/*all product code */
+/* Media Query for responsive */
+
+/* Media Query foe Mobile devices */
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    body {
+        font-size: 12px; 
+    }
+    
+    .logo a{
+        font-size: 20px; 
+    }
+
+    .navbar {
+        padding-top: 3.5px;
+        flex-direction:column; 
+        align-items: center; 
+    }
+    /* .mic button{
+        flex-direction: row;
+        /* visibility: hidden; 
+    } */
+
+    .menu li {
+        visibility: hidden; 
+    }
+
+    .leftbox {
+        font-size:smaller ; 
+    }
+
+    .scrool {
+        font-size: smaller;
+    }
+    .footer{
+        display: block;
+    }
+    .footer h4{
+        color: antiquewhite;
+    }
+
+    .footer-content{
+        text-align: center; 
+    }
+    .s-icon a{
+        align-items: center;
+    }
+}
+/* Media query for tablet or ipad*/
+@media screen and (min-width: 481px) and (max-width: 768px)  {
+    .logo a{
+        font-size: 24px; 
+    }
+
+    .navbar {
+        padding-top: 5px;
+        flex-direction:column; 
+        align-items: center; 
+    }
+
+    .menu li {
+        margin-bottom: 10px; 
+    }
+
+    .leftbox {
+        font-size:smaller ; 
+    }
+
+    .scrool {
+        font-size: smaller;/
+    }
+
+    .footer-content{
+        text-align: center; 
+    }
+    .s-icon a{
+        align-items: center;
+    }
+}
+/* For laptop or small-size screen */
+@media screen and (min-width: 769px) and (max-width: 1024px)  {
+    .navbar{
+        justify-content: space-evenly;
+    }
+    .footer-content{
+        text-align: center; 
+    }
+    .s-icon a{
+        align-items: center;
+    } 
+}
+
+
+
